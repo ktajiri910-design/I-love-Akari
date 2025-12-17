@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アルバム - 燈と楽の成長日記</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .filter-buttons {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .filter-btn {
+            background: white;
+            border: 2px solid var(--color-accent);
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            margin: 0 5px;
+            font-family: var(--font-main);
+            font-weight: bold;
+            color: var(--color-text);
+        }
+
+        .filter-btn.active {
+            background: var(--color-accent);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">燈と楽の成長日記♡</a>
+            <div class="menu-toggle" id="mobile-menu">☰</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="profile_akari.html">燈のページ</a></li>
+                <li><a href="profile_raku.html">楽のページ</a></li>
+                <li><a href="gallery.html" class="active">アルバム</a></li>
+                <li><a href="blog.html">成長記録</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="container">
+        <h2>思い出アルバム</h2>
+
+        <div class="filter-buttons">
+            <button class="filter-btn active">すべて</button>
+            <button class="filter-btn">2025年 (4歳/2歳)</button>
+            <button class="filter-btn">2024年 (3歳/1歳)</button>
+            <button class="filter-btn">2023年 (2歳/0歳)</button>
+        </div>
+
+        <div class="card-grid">
+            <!-- Simulated Gallery Items -->
+            <div class="card">
+                <img src="images/2025/akari_4yo.png" alt="燈 4歳の誕生日">
+                <p>燈 4歳の誕生日</p>
+            </div>
+            <div class="card">
+                <img src="images/2025/raku_2yo.png" alt="楽 2歳の誕生日">
+                <p>楽 2歳の誕生日</p>
+            </div>
+            <div class="card">
+                <img src="images/2024/akari_3yo.png" alt="燈 3歳の誕生日">
+                <p>燈 3歳の誕生日</p>
+            </div>
+            <div class="card">
+                <img src="images/2024/raku_1yo.png" alt="楽 1歳の誕生日">
+                <p>楽 1歳の誕生日</p>
+            </div>
+            <div class="card">
+                <img src="images/2023/akari_2yo.png" alt="燈 2歳の誕生日">
+                <p>燈 2歳の誕生日</p>
+            </div>
+            <div class="card">
+                <img src="images/2023/raku_birth.png" alt="楽 誕生">
+                <p>楽 誕生</p>
+            </div>
+            <div class="card">
+                <img src="images/2022/akari_1yo.png" alt="燈 1歳の誕生日">
+                <p>燈 1歳の誕生日</p>
+            </div>
+            <div class="card">
+                <img src="images/2021/akari_birth.png" alt="燈 誕生">
+                <p>燈 誕生</p>
+            </div>
+            <div class="card">
+                <img src="https://placehold.co/300x300/E2F0CB/ffffff?text=Family" alt="Photo">
+                <p>家族旅行</p>
+            </div>
+
+            <!-- 
+            === 写真の追加方法 ===
+            以下のブロックをコピーして、画像ファイル名と説明を書き換えてください。
+            
+            <div class="card">
+                <img src="images/2025/あなたの写真ファイル名.jpg" alt="写真の説明">
+                <p>写真のタイトルや日付</p>
+            </div>
+            -->
+
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Akari & Raku Growth Diary</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

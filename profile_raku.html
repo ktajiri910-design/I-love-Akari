@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>楽（らく）のページ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">燈と楽の成長日記♡</a>
+            <div class="menu-toggle" id="mobile-menu">☰</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="profile_akari.html">燈のページ</a></li>
+                <li><a href="profile_raku.html" class="active">楽のページ</a></li>
+                <li><a href="gallery.html">アルバム</a></li>
+                <li><a href="blog.html">成長記録</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="hero" style="background: linear-gradient(180deg, #F0FFF9 0%, #FFF9F9 100%);">
+        <div class="container">
+            <img src="images/raku_main.jpg" alt="Raku" class="hero-img" style="border-color: #B5EAD7;">
+            <h1 style="color: #88D4B8; margin-top: 20px;">楽（らく）</h1>
+            <p style="font-size: 1.5rem; font-weight: bold;" id="profile-age-raku">計算中...</p>
+            <p>2023年8月31日生まれ</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="card" style="text-align: left; max-width: 800px; margin: 0 auto;">
+            <h2 style="text-align: left; border-bottom: 2px solid #B5EAD7; padding-bottom: 10px;">プロフィール</h2>
+            <p><strong>性格：</strong> 好奇心旺盛で、なんでも触ってみるのが好き。</p>
+            <br>
+            <p><strong>好きなもの：</strong></p>
+            <ul style="margin-left: 20px;">
+                <li>バナナ</li>
+                <li>車のおもちゃ</li>
+                <li>お風呂</li>
+            </ul>
+            <br>
+            <p><strong>最近のブーム：</strong> 「マンマ」と言うこと</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2>フォトギャラリー</h2>
+        <div class="card-grid">
+            <div class="card">
+                <img src="images/2025/raku_2yo.png" alt="2歳の誕生日">
+                <p>2歳の誕生日</p>
+            </div>
+            <div class="card">
+                <img src="images/2024/raku_1yo.png" alt="1歳の誕生日">
+                <p>1歳の誕生日</p>
+            </div>
+            <div class="card">
+                <img src="images/2023/raku_birth.png" alt="誕生">
+                <p>誕生</p>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="gallery.html"
+                style="background: var(--color-secondary); color: white; padding: 10px 20px; border-radius: 20px;">もっと見る</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Akari & Raku Growth Diary</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

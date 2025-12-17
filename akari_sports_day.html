@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>燈の運動会 - 燈と楽の成長日記</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">燈と楽の成長日記♡</a>
+            <div class="menu-toggle" id="mobile-menu">☰</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="profile_akari.html">燈のページ</a></li>
+                <li><a href="profile_raku.html">楽のページ</a></li>
+                <li><a href="gallery.html">アルバム</a></li>
+                <li><a href="blog.html" class="active">成長記録</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="container">
+        <div style="max-width: 800px; margin: 0 auto;">
+            <a href="blog.html" style="display: inline-block; margin-bottom: 20px; color: var(--color-primary);">&larr;
+                成長記録一覧に戻る</a>
+
+            <h1 style="color: var(--color-primary); margin-bottom: 10px;">燈ちゃんの運動会</h1>
+            <p style="color: #999; margin-bottom: 30px;">2025年9月21日</p>
+
+            <div class="card" style="padding: 30px;">
+                <p>燈ちゃんの初めての運動会！<br>
+                    かけっこもダンスも一生懸命がんばりました。<br>
+                    お弁当もたくさん食べて、とっても楽しそうでした。</p>
+
+                <div class="card-grid" style="margin-top: 30px;">
+                    <div class="card">
+                        <img src="images/2025/sports_day/01.jpg" alt="運動会1">
+                    </div>
+                    <div class="card">
+                        <img src="images/2025/sports_day/02.jpg" alt="運動会2">
+                    </div>
+                    <div class="card">
+                        <img src="images/2025/sports_day/03.jpg" alt="運動会3">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Akari & Raku Growth Diary</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
